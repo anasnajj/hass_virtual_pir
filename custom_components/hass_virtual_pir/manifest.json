@@ -7,6 +7,14 @@
   "codeowners": [
     "@anasnajj"
   ],
+  "options": [
+        {
+            "name": CONF_IP_ADDRESS,
+            "type": "string",
+            "required": true,
+            "description": "IP address of the device to monitor"
+        }
+    ]
   "requirements": [],
   "dependencies": [],  
   "config_flow": true,
