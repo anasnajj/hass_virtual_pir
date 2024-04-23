@@ -3,6 +3,8 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.const import CONF_IP_ADDRESS
 
+from .const import DOMAIN
+
 class VirtualPIRConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for Virtual PIR Sensor."""
 
@@ -11,6 +13,7 @@ class VirtualPIRConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     async def async_step_user(self, user_input=None):
         """Handle the initial step."""
+        errors = {}
         if user_input is not None:
             return self.async_create_entry(
                 title="Virtual PIR Sensor", data=user_input
@@ -23,4 +26,5 @@ class VirtualPIRConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                     vol.Required(CONF_IP_ADDRESS): str,
                 }
             ),
+            errors=errors,
         )
