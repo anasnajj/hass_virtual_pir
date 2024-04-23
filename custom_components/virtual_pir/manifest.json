@@ -1,13 +1,20 @@
 {
-    "domain": "hass_virtual_pir",
-    "name": "Virtual PIR Sensor",
-    "documentation": "https://github.com/anasnajj/hass_virtual_pir",
-    "requirements": [],
-    "dependencies": [],
-    "codeowners": ["@anasnajj"],
-    "iot_class": "local_push",
-    "version": "1.0.0",
-    "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNnYSkwZmasPQCQO0mL_tselGRBWfVQLPXGquKIatA&s",
-    "config_flow": true
+  "domain": "hass_virtual_pir",
+  "name": "Virtual PIR Sensor",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNnYSkwZmasPQCQO0mL_tselGRBWfVQLPXGquKIatA&s",
+  "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
+  "documentation": "https://github.com/anasnajj/hass_virtual_pir",
+  "codeowners": [
+    "@anasnajj"
+  ],
+  "requirements": [],
+  "dependencies": [],  
+  "config_flow": true,
+  "documentation": "https://github.com/anasnajj/hass_virtual_pir",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
+  "version": "1.1.0"
 }
+
+
+
