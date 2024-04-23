@@ -18,4 +18,34 @@ Get Started:
 
 Discover the power of ping-based motion detection with the Virtual PIR Sensor integration for Home Assistant. Transform your smart home environment into a responsive and intelligent ecosystem, where virtual sensors provide reliable motion detection capabilities to enhance security, convenience, and comfort.
 
+
+
+# Virtual PIR Sensor for Home Assistant Add-ons
+
+## Available Add-ons
+
+|Add-on|Description|
+|------|-----------|
+|**Virtual PIR Sensor for Home Assistant**|The Virtual PIR Sensor integration for Home Assistant introduces a unique approach to motion detection, utilizing the ubiquitous ping operation.|
+
+## Installation
+
+To install the Add-ons in this repository in Hass.io:
+
+1. Open the **Home Assistant** menu.
+2. Click **HACS**.
+3. Enter this URL in the **Add new repository by URL** box: [https://github.com/marthoc/hassio-addons.](https://github.com/anasnajj/hass_virtual_pir/)
+4. Click **ADD**.
+5. Find **Virtual PIR Sensor** in the Add-on Store.
+6. Select the Add-on you wish to install.
+
+
+
+
+
+
+
+
+
+
 For comprehensive installation instructions, detailed documentation, and community support, visit the GitHub repository.
