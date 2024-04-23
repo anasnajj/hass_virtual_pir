@@ -1,7 +1,13 @@
 {
-    "domain": "virtual_pir",
+    "domain": "hass_virtual_pir",
     "name": "Virtual PIR Sensor",
-    "documentation": "https://www.example.com",
+    "documentation": "https://github.com/anasnajj/hass_virtual_pir",
+    "requirements": [],
     "dependencies": [],
-    "codeowners": []
+    "codeowners": ["@anasnajj"],
+    "iot_class": "local_push",
+    "version": "1.0.0",
+    "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNnYSkwZmasPQCQO0mL_tselGRBWfVQLPXGquKIatA&s",
+    "config_flow": true
 }
