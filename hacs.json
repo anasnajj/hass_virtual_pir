@@ -1,4 +1,8 @@
 {
-  "name": "Virtual PIR Sensor",
-  "homeassistant": "2024.1.0"
+    "name": "Virtual PIR Sensor",
+    "filename": "hass_virtual_pir.zip",
+    "hide_default_branch": true,
+    "homeassistant": "2023.8.0",
+    "render_readme": true,
+    "zip_release": true
 }
