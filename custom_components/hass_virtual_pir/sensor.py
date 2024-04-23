@@ -16,7 +16,7 @@ class VirtualPIRSensor(Entity):
     def __init__(self, config):
         """Initialize the sensor."""
         self._name = "Virtual PIR Sensor"
-        self._ip_address = config[CONF_IP_ADDRESS]
+        self._ip_address = config.get(CONF_IP_ADDRESS)
         self._state = STATE_UNKNOWN
 
     @property
@@ -31,7 +31,10 @@ class VirtualPIRSensor(Entity):
 
     async def async_update(self):
         """Update the sensor."""
-        if ping(self._ip_address):
-            self._state = "Detected"
+        if self._ip_address:
+            if ping(self._ip_address):
+                self._state = "Detected"
+            else:
+                self._state = "Clear"
         else:
-            self._state = "Clear"
+            self._state = STATE_UNKNOWN
