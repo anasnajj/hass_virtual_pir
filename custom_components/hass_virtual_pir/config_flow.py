@@ -1,6 +1,7 @@
 import voluptuous as vol
 from homeassistant import config_entries
 from subprocess import run, PIPE
+DOMAIN = "hass_virtual_pir"
 
 class VirtualPIRFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
 
