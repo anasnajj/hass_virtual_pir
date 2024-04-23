@@ -1,0 +1,7 @@
+{
+    "domain": "virtual_pir",
+    "name": "Virtual PIR Sensor",
+    "documentation": "https://www.example.com",
+    "dependencies": [],
+    "codeowners": []
+}
