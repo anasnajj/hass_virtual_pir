@@ -13,7 +13,7 @@
   "documentation": "https://github.com/anasnajj/hass_virtual_pir",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
-  "version": "1.1.1"
+  "version": "1.1.3"
 }
 
 
