@@ -20,14 +20,17 @@ class VirtualPIRSensor(BinarySensorEntity):
     def __init__(self, ip_address):
         self._ip_address = ip_address
         self._state = None
+        self._device_class = BinarySensorDeviceClass.MOTION
 
     async def async_update(self):
-        # Replace this with your actual ping logic
         try:
             with async_timeout.timeout(DEFAULT_TIMEOUT):
                 subprocess.run(["ping", "-c", "1", self._ip_address], check=True)
                 self._state = True
         except subprocess.CalledProcessError:
             self._state = False
+            _LOGGER.error("Error updating Virtual PIR Sensor state", exc_info=True)
         except asyncio.TimeoutError:
             self._state = False
+            _LOGGER.error("Error updating Virtual PIR Sensor state", exc_info=True)
+
