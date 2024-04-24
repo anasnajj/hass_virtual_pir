@@ -1,5 +1,12 @@
 {
     "name": "Virtual PIR Sensor",  
+    "description": "A virtual PIR sensor for Home Assistant",
+    "url": "https://github.com/anasnajj/hass_virtual_pir",
+    "docs": "https://github.com/anasnajj/hass_virtual_pir/blob/main/README.md",
+    "author": "anasnajj",
+    "version": "1.1.3",
+    "requirements": [],
+    "hide_default_branch": false,
     "hide_default_branch": true,
     "homeassistant": "2023.8.0",
     "render_readme": true
