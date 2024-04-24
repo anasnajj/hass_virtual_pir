@@ -12,6 +12,7 @@
   "config_flow": true,
   "options": [
     {
+      "name": CONF_IP_ADDRESS,
       "type": "string",
       "required": true,
       "description": "IP address of the device to monitor"
