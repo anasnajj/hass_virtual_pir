@@ -1,22 +1,22 @@
 {
-    "domain": "hass_virtual_pir",
-    "name": "Virtual PIR Sensor",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNnYSkwZmasPQCQO0mL_tselGRBWfVQLPXGquKIatA&s",
-    "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
-    "documentation": "https://github.com/anasnajj/hass_virtual_pir",
-    "requirements": [],
-    "dependencies": [], 
-    "version": "1.1.4",
-    "iot_class": "local_polling",
-    "codeowners": ["@anasnajj"],
-    "config_flow": true,
-    "options": [
-        {
-            "name": CONF_IP_ADDRESS,
-            "type": "string",
-            "required": true,
-            "description": "IP address of the device to monitor"
-        }
-    ]
+  "domain": "hass_virtual_pir",
+  "name": "Virtual PIR Sensor",
+  "documentation": "https://github.com/anasnajj/hass_virtual_pir",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbNnYSkwZmasPQCQO0mL_tselGRBWfVQLPXGquKIatA&s",
+  "issue_tracker": "https://github.com/anasnajj/hass_virtual_pir/issues",
+  "requirements": [],
+  "dependencies": [], 
+  "iot_class": "local_polling",
+  "version": "1.1.4",
+  "codeowners": ["@anasnajj"],
+  "config_flow": true,
+  "options": [
+    {
+      "name": CONF_IP_ADDRESS,
+      "type": "string",
+      "required": true,
+      "description": "IP address of the device to monitor"
+    }
+  ]
 }
 
