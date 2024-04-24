@@ -13,10 +13,13 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN][entry.entry_id] = entry.data
 
-    forward_entry_setup = hass.config_entries.async_forward_entry_setup(entry, "binary_sensor")
-    async_add_entities: AddEntitiesCallback = forward_entry_setup  
+    # Retrieve the IP address entered by the user
+    ip_address = entry.data[CONF_IP_ADDRESS]
 
-    async_add_entities([VirtualPIRSensor(entry.data[CONF_IP_ADDRESS])], True)
+    forward_entry_setup = hass.config_entries.async_forward_entry_setup(entry, "binary_sensor")
+    async_add_entities: AddEntitiesCallback = forward_entry_setup
+
+    async_add_entities([VirtualPIRSensor(ip_address)], True)
     return True
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
